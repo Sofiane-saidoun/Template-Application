@@ -29,12 +29,136 @@ h1 {
   font-size: 50px;
 }
 .font-70 {
-  font-size: 50px;
+  font-size: 70px;
 }
 .font-80 {
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .bg-warning {
   background: #fdcc52;
+}
+
+/*---------*/
+
+.navbar-light a.active {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.iphone-mockup {
+  position: relative;
+  width: 100%;
+  padding-bottom: 201.76%;
+}
+
+.device {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/iphone_white.png);
+}
+
+.iphone-mockup.black > .device {
+  background-image: url(../img/iphone_black.png);
+}
+
+.iphone-mockup.white > .device {
+  background-image: url(../img/iphone_white.png);
+}
+
+.screen {
+  position: absolute;
+  overflow: hidden;
+  top: 11.58%;
+  bottom: 11.58%;
+  left: 5.97%;
+  right: 5.97%;
+}
+
+.icon-color {
+  color: #7b4397;
+}
+.badge-link {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.badge-link img {
+  height: 60px;
+}
+
+#showcase {
+  background: url(../img/showcase-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section#contact a {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+a.gth {
+  background: url(../img/social_media.png) 0px top;
+}
+a.lnk {
+  background: url(../img/social_media.png) -384px top;
+}
+a.fb {
+  background: url(../img/social_media.png) -256px top;
+}
+
+a.tw {
+  background: url(../img/social_media.png) -512px top;
+}
+
+a.go {
+  background: url(../img/social_media.png) -768px top;
+}
+
+a.ytube {
+  background: url(../img/social_media.png) -640px top;
+}
+
+section#contact li:hover a.gth {
+  background: url(../img/social_media.png) 0 bottom;
+}
+section#contact li:hover a.lnk {
+  background: url(../img/social_media.png) -384px bottom;
+}
+section#contact li:hover a.fb {
+  background: url(../img/social_media.png) -256px bottom;
+}
+
+section#contact li:hover a.tw {
+  background: url(../img/social_media.png) -512px bottom;
+}
+
+section#contact li:hover a.ytube {
+  background: url(../img/social_media.png) -640px bottom;
+}
+
+section#contact li:hover a.go {
+  background: url(../img/social_media.png) -768px bottom;
+}
+
+footer {
+  padding: 25px 0;
 }
