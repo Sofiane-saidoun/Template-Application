@@ -40,10 +40,21 @@ h1 {
 }
 
 /*---------*/
+.navbar {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+#menu a {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
 
-.navbar-light a.active {
+#menu a.active {
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .device-container {

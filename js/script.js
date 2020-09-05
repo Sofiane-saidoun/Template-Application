@@ -9,10 +9,13 @@ $(document).ready(function () {
       $(document).scroll(function () {
         scroll_start = $(this).scrollTop();
         if (scroll_start > offset.top) {
-          $(".navbar").addClass("bg-cloud");
+          $(".navbar").addClass("navbar-light");
+          $(".navbar").removeClass("navbar-dark");
+          $(".navbar").addClass("bg-light");
         } else {
+          $(".navbar").removeClass("navbar-light");
           $(".navbar").removeClass("bg-light");
-          $(".navbar").removeClass("bg-cloud");
+          $(".navbar").addClass("navbar-dark");
 
           /*console.log("portfolio out");*/
         }
@@ -20,7 +23,7 @@ $(document).ready(function () {
     }
   };
   var scroll = function () {
-    $(".page-scroll a").click(function (event) {
+    $("#menu a").click(function (event) {
       event.preventDefault();
       var $anchor = $(this);
 
